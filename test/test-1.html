@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background: #23d03f;
+            color: #fff;
+        }
+
+        .login-box {
+
+            width: 500px;
+            display: block;
+            margin: 50px auto;
+        }
+
+        .login-box h3 {
+            text-align: center;
+        }
+
+        .login-box .hr {
+            border-bottom: 2px solid #fff;
+        }
+
+        .btn {
+            border: 1px solid #fff;
+            cursor: pointer;
+            text-decoration: none;
+            margin: auto;
+            font-size: 15px;
+            width: 100%;
+            position: relative;
+            color: #fff;
+            text-align: center;
+            vertical-align: middle;
+            max-width: 200px;
+        }
+
+        .btn:hover {
+        }
+
+        .login-box .btn-style-1 {
+            line-height: 45px;
+            display: block;
+            margin-top: 30px;
+        }
+
+        .login-box .btn-style-1 svg {
+            position: absolute;
+            left: 0;
+            height: 45px;
+            top: 0;
+            width: 100%;
+        }
+
+        .login-box .btn-style-1 svg rect {
+            fill: none;
+            stroke: #fff;
+            stroke-width: 5;
+            stroke-dasharray: 422, 0;
+        }
+
+        .login-box .btn-style-1:hover {
+            background: #23d03f;
+            font-weight: bold;
+        }
+
+        .login-box .btn-style-1:hover svg rect {
+            stroke-width: 5;
+            stroke-dasharray: 33, 310;
+            stroke-dashoffset: 48;
+            transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login-box">
+    <h3>Example Animate Svg</h3>
+    <div class="hr"></div>
+    <a href="" class="btn btn-style-1">
+        <svg>
+            <rect height="100%" width="100%" fill="none"></rect>
+        </svg>
+        注册
+    </a>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background: #23d03f;
+            color: #fff;
+        }
+
+        .login-box {
+
+            width: 500px;
+            display: block;
+            margin: 50px auto;
+        }
+
+        .login-box h3 {
+            text-align: center;
+        }
+
+        .login-box .hr {
+            border-bottom: 2px solid #fff;
+        }
+
+        .btn {
+            border: 1px solid #fff;
+            cursor: pointer;
+            text-decoration: none;
+            margin: auto;
+            font-size: 15px;
+            width: 100%;
+            position: relative;
+            color: #fff;
+            text-align: center;
+            vertical-align: middle;
+            max-width: 200px;
+        }
+
+        .btn:hover {
+        }
+
+        .login-box .btn-style-1 {
+            line-height: 45px;
+            display: block;
+            border-radius: 4px;
+            margin-top: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .login-box .btn-style-1 span {
+            z-index: 1000;
+            overflow: hidden;
+        }
+
+        /**
+         *添加after镜面效果
+         */
+        .btn-style-1:after {
+            background: #fff;
+            height: 200px;
+            right: -50px;
+            z-index: 1;
+            top: -50px;
+            display: inline-block;
+            position: absolute;
+            opacity: .2;
+            width: 40px;
+            content: '';
+            transform: rotate(35deg);
+            transition: all .5s cubic-bezier(0.22, 1, 0.22, 1);
+        }
+
+        .btn-style-1:hover:after {
+            right: 120%;
+            transition: all .5s cubic-bezier(0.22, 1, 0.22, 1);
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="login-box">
+    <h3>Example Animate</h3>
+    <div class="hr"></div>
+    <a href="" class="btn btn-style-1">
+        <span>LOGIN</span>
+    </a>
+</div>
+
+</body>
+
+</html>
